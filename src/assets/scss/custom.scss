@@ -78,15 +78,7 @@ $veri-peri: #676999;
 }
 
 .box-2 {
-  height: 100%;
-  width: 750px;
-  border-radius: 15px;
-  border: 1px solid $line-grey;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.editor-box {
-  margin: auto;
+  margin: 1rem;
   height: 100%;
   width: 750px;
   border-radius: 15px;
@@ -94,7 +86,20 @@ $veri-peri: #676999;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   @media (max-width: 576px) {
-    width: 350px !important;
+    width: 500px !important;
+  }
+}
+
+.editor-box {
+  margin: 1rem;
+  height: 100%;
+  width: 750px;
+  border-radius: 15px;
+  border: 1px solid $line-grey;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @media (max-width: 576px) {
+    width: 400px !important;
   }
 }
 
