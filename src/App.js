@@ -4,7 +4,7 @@ import "./assets/scss/comman.scss";
 import "./assets/scss/custom.scss";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import topics from "./assets/dataset/topics.json";
 import { IoSaveOutline } from "react-icons/io5";
 import { CiEdit } from "react-icons/ci";
