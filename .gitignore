@@ -11,6 +11,10 @@
 # production
 /build
 
+# env
+.env
+.env.local
+
 #lock-files
 package-lock.json
 yarn.lock
