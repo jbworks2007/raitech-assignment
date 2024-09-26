@@ -54,13 +54,14 @@ function App() {
   const [captureInterval, setCaptureInterval] = useState(0);
 
   const validateInput = () => {
-    !adv.min_pass
-      ? alert("Please enter minimum passing score")
-      : !adv.assign_easy || !adv.assign_medium || !adv.assign_hard
-      ? alert("Please enter the value of all assign marks ")
-      : setSettings(false);
-    setBasic(false);
-    setInstruction(true);
+    if (!adv.min_pass) alert("Please enter minimum passing score");
+    else if (!adv.assign_easy || !adv.assign_medium || !adv.assign_hard)
+      alert("Please enter the value of all assign marks ");
+    else {
+      setSettings(false);
+      setBasic(false);
+      setInstruction(true);
+    }
   };
 
   //Modal States
@@ -154,7 +155,7 @@ function App() {
                             disabled={!edit}
                             title={tvalue.topic}
                             onSelect={(eventKey) => {
-                              setTvalue({ topic: eventKey });
+                              setTvalue({ ...tvalue, topic: eventKey });
                             }}
                           >
                             <input
@@ -242,7 +243,7 @@ function App() {
                                     setEdit(false);
                                   else
                                     alert(
-                                      "please enter the value od easy medium hard"
+                                      "please enter the value of easy medium hard"
                                     );
                                 }}
                               />
